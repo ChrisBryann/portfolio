@@ -1,5 +1,6 @@
+import { useForm } from "@formspree/react";
 import { E164Number } from "libphonenumber-js/core";
-import { Nanum_Myeongjo } from "next/font/google";
+import { env } from "process";
 import { ChangeEvent, useState } from "react";
 import PhoneInput from "react-phone-number-input/input";
 
@@ -8,6 +9,9 @@ const Contact = () => {
   const [email, setEmail] = useState<string>("");
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+
+  const [formState, handleFormSubmit] = useForm(`${process.env.FORM_ID as string}`);
+  
   return (
     <div id="Contact">
       <section className="bg-blue-ocean">
@@ -20,7 +24,10 @@ const Contact = () => {
             </div>
 
             <div className="rounded-lg bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form action="" className="space-y-4">
+              <form
+              onSubmit={handleFormSubmit}
+                className="space-y-4"
+              >
                 <div>
                   <label className="sr-only" htmlFor="name">
                     Name
@@ -87,13 +94,15 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <div className="mt-4">
+                <div className="mt-4 flex flex-row items-center gap-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                    className="inline-block w-full rounded-lg bg-black px-5 py-3 hover:bg-stone-900 font-medium text-white sm:w-auto disabled:bg-gray-500"
+                    disabled={formState.submitting}
                   >
                     Submit
                   </button>
+                  {formState.succeeded && <p className="text-blue-ocean">Submitted!</p>}
                 </div>
               </form>
             </div>
