@@ -13,10 +13,10 @@ const About = () => {
       <div className="mt-16 flex flex-col md:flex-row align-center items-center">
         <div className="w-1/2 flex justify-center content-center">
           <Image
-            src=""
+            src="/placeholder-image.jpg"
             alt="about"
             className="shadow-lg"
-            width={300}
+            width={500}
             height={300}
           />
         </div>
@@ -40,7 +40,7 @@ const About = () => {
           </div>
           <div className="mt-6">
             <span>
-              For any business inquiries, please contact me <Link href="#contact" className="underline">here</Link>.
+              For any business inquiries, please contact me <Link href="#Contact" className="underline">here</Link>.
             </span>
           </div>
           <div className="mt-6 mx-auto md:mx-0 border-2 border-white rounded-md py-1 px-2 w-36 text-center font-bold">

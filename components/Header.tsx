@@ -1,14 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import config from "../util/config.json"
 
 const Header = () => {
   const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false);
-  const navigation: any = [
-    { title: "About" },
-    { title: "Projects" },
-    { title: "Contact" },
-  ];
+  const navigation = config.navigation;
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-100 p-6">
       <div className="flex items-center flex-shrink-0 text-black mr-6">

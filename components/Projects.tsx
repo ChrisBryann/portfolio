@@ -1,44 +1,23 @@
 import Image from "next/image";
+import config from "../util/config.json";
 
 const Projects = () => {
-  const projects = {
-    title: "Projects",
-    projects: [
-      {
-        title: "Project 1",
-        description:
-          "Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: complement the information: the skills learned or reinforced in its realization and how you faced it, prove to be proactive in the search for solutions.",
-        url: "http://www.example.com/project1",
-        github: "http://www.example.com/github",
-        image: "",
-      },
-      {
-        title: "Project 2",
-        description:
-          "Demonstrate in this description the skills of a programmer: such as having commitment, having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.",
-        url: "http://www.example.com/project2",
-        github: "http://www.example.com/github",
-        image: "",
-      },
-      {
-        title: "Project 3",
-        description:
-          "If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.",
-        url: "http://www.example.com/project3",
-        github: "http://www.example.com/github",
-        image: "",
-      },
-    ],
-  };
+  const projects = config.projects;
   return (
-    <div id={projects.title} className="px-8 md:px-16 md:px-32 pb-16 bg-gray-100">
+    <div
+      id={projects.title}
+      className="px-8 md:px-16 md:px-32 pb-16 bg-gray-100"
+    >
       <h1 className="pt-12 uppercase font-bold text-center text-black text-bold text-4xl">
         {projects.title}
       </h1>
       <div>
         <ul>
           {projects.projects.map((item) => (
-            <li key={item.title} className="flex flex-col lg:flex-row mt-12">
+            <li
+              key={item.title}
+              className="flex flex-col justify-center lg:flex-row mt-12"
+            >
               <div className="lg:w-1/3">
                 <h2 className="text-2xl">{item.title}</h2>
                 <p className="mt-6">{item.description}</p>
