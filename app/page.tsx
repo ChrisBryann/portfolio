@@ -4,17 +4,16 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import Projects from "@/components/Projects";
-import { Fragment } from "react";
 
 const AppHomePage = () => {
   return (
-    <Fragment>
+    <div className="bg-gray-100">
       <Home />
       <About />
       <Projects />
       <Contact />
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

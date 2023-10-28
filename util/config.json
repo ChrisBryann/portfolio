@@ -5,27 +5,28 @@
     { "title": "Contact" }
   ],
   "projects": {
-    "title": "Projects",
+    "title": "\"To accomplish great things, we must not only act, but also dream; not only plan, but also believe.\"",
+    "title_name": "-Anatole France",
     "projects": [
       {
-        "title": "Project 1",
-        "description": "Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: complement the information: the skills learned or reinforced in its realization and how you faced it, prove to be proactive in the search for solutions.",
+        "title": "Spill",
+        "description": "Expense Managing App. Built using Next.js on TypeScript while utilizing Tailwind CSS for styling.",
         "url": "http://www.example.com/project1",
-        "github": "http://www.example.com/github",
+        "github": "https://github.com/jthamrun/spill-app",
         "image": "/placeholder-image.jpg"
       },
       {
-        "title": "Project 2",
-        "description": "Demonstrate in this description the skills of a programmer: such as having commitment, having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.",
+        "title": "Zotter",
+        "description": "UC Irvine Course Scheduling App. Built using React.js on TypeScript while utilizing Tailwind CSS for styling and REST API for data manipulation(?).",
         "url": "http://www.example.com/project2",
-        "github": "http://www.example.com/github",
+        "github": "https://github.com/ChrisBryann/Zotter",
         "image": "/placeholder-image.jpg"
       },
       {
-        "title": "Project 3",
-        "description": "If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.",
+        "title": "CareSpace",
+        "description": "Mental Health Advisor and Journal App. Created during the 48-hours long hackathon competition, Garuda Hacks, on August 2020. First time",
         "url": "http://www.example.com/project3",
-        "github": "http://www.example.com/github",
+        "github": "https://github.com/ChrisBryann/CareSpaceProject",
         "image": "/placeholder-image.jpg"
       }
     ]

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const inter = Quicksand({ weight: "700", subsets: ["latin"] });
+const inter = Montserrat({ weight: ['500', '600', '700'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

@@ -6,7 +6,7 @@ type Props = {
 
 const WordCard = ({ word }: Props) => {
   return (
-    <div className="relative block break-words overflow-hidden h-fit bg-white rounded-lg border border-gray-100 p-4 mb-12 sm:p-6 lg:mr-28 lg:mb-0 lg:p-8">
+    <div className="relative block break-words overflow-hidden h-fit bg-white shadow-lg rounded-lg p-4 mb-12 sm:p-6 lg:mr-28 lg:mb-0 lg:p-8">
       <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
 
       <div className="flex justify-between gap-4">

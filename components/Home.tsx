@@ -48,14 +48,14 @@ const Home = () => {
     fetchWord();
   }, []);
   return (
-    <section className="h-fit bg-gray-100 overflow-x-hidden">
+    <section className="h-fit overflow-x-hidden">
       <div className="flex flex-col m-4 gap-2 lg:flex-row items-center lg:m-0">
         <div className="px-8 pb-28 lg:px-32 flex flex-col justify-center align-between">
           <h1 className="text-4xl sm:text-6xl mt-32 font-bold tracking-wide">
             Hi, my name is
-            <span className="ml-3 break-words bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Christopher Bryan
-            </span>
+          </h1>
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-wide mt-4 break-words bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            Christopher Bryan
           </h1>
           <h1 className="text-4xl sm:text-6xl font-bold tracking-wide mt-4">
             {"I'm a Software Engineer"}
@@ -71,7 +71,11 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        {word && <WordCard word={word} />}
+        {word && (
+          <div className="">
+            <WordCard word={word} />
+          </div>
+        )}
       </div>
     </section>
   );

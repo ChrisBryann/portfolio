@@ -2,23 +2,26 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100">
+    <footer>
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="fill-current w-8 h-8 mr-2"
-        >
-          <path d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
-          <path d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
-          <path d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="fill-current w-8 h-8 mr-2"
+          >
+            <path d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
+            <path d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
+            <path d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
+          </svg>
 
-        <Link href="/" className="font-semibold text-xl tracking-tight hover:text-blue-ocean">
-          ChrisBryann
-        </Link>
+          <Link
+            href="/"
+            className="font-semibold text-xl tracking-tight hover:text-blue-ocean"
+          >
+            ChrisBryann
+          </Link>
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
@@ -28,62 +31,26 @@ const Footer = () => {
 
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
-            <a
-              className="transition hover:text-blue-ocean"
-              href="/"
-            >
+            <a className="transition hover:text-blue-ocean" href="/">
               About
             </a>
           </li>
 
           <li>
-            <a
-              className="transition hover:text-blue-ocean"
-              href="/"
-            >
-              Careers
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="transition hover:text-blue-ocean"
-              href="/"
-            >
-              History
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="transition hover:text-blue-ocean"
-              href="/"
-            >
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="transition hover:text-blue-ocean"
-              href="/"
-            >
+            <a className="transition hover:text-blue-ocean" href="/">
               Projects
             </a>
           </li>
 
           <li>
-            <a
-              className="transition hover:text-blue-ocean"
-              href="/"
-            >
-              Blog
+            <a className="transition hover:text-blue-ocean" href="/">
+              Contact
             </a>
           </li>
         </ul>
 
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
-          <li>
+          {/* <li>
             <a
               href="/"
               rel="noreferrer"
@@ -104,11 +71,11 @@ const Footer = () => {
                 />
               </svg>
             </a>
-          </li>
+          </li> */}
 
           <li>
             <a
-              href="/"
+              href="https://www.instagram.com/chris.bryann"
               rel="noreferrer"
               target="_blank"
               className="transition hover:text-blue-ocean"
@@ -131,26 +98,27 @@ const Footer = () => {
 
           <li>
             <a
-              href="/"
+              href="https://www.linkedin.com/in/christopherbryan21/"
               rel="noreferrer"
               target="_blank"
               className="transition hover:text-blue-ocean"
             >
               <span className="sr-only">Twitter</span>
               <svg
+                xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
             </a>
           </li>
 
           <li>
             <a
-              href="/"
+              href="https://github.com/ChrisBryann"
               rel="noreferrer"
               target="_blank"
               className="transition hover:text-blue-ocean"
@@ -171,7 +139,7 @@ const Footer = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a
               href="/"
               rel="noreferrer"
@@ -192,7 +160,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </footer>

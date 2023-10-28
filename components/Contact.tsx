@@ -10,24 +10,26 @@ const Contact = () => {
   const [phoneNumber, setPhoneNumber] = useState<string>("");
   const [message, setMessage] = useState<string>("");
 
-  const [formState, handleFormSubmit] = useForm(`${process.env.FORM_ID as string}`);
-  
+  const [formState, handleFormSubmit] = useForm(
+    `${process.env.FORM_ID as string}`
+  );
+
   return (
-    <div id="Contact">
-      <section className="bg-blue-ocean">
+    <div id="Contact" className="px-8 md:px-32">
+      <section>
+        <h1 className="pt-12 uppercase font-bold text-center text-bold text-6xl">
+          {`"Human interaction is the key force in overcoming resistance and speeding change."`} <span className="text-sm">-M. Scott Peck</span>
+        </h1>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
-              <p className="max-w-xl text-center text-white text-xl sm:text-left">
-                {`Have any questions? Send me a message and I'll get back to you!`}
+              <p className="max-w-xl text-center text-xl sm:text-left">
+                {`Any inquiries? Send me a message and I'll get back to you!`}
               </p>
             </div>
 
-            <div className="rounded-lg bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form
-              onSubmit={handleFormSubmit}
-                className="space-y-4"
-              >
+            <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+              <form onSubmit={handleFormSubmit} className="space-y-4">
                 <div>
                   <label className="sr-only" htmlFor="name">
                     Name
@@ -97,12 +99,14 @@ const Contact = () => {
                 <div className="mt-4 flex flex-row items-center gap-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-black px-5 py-3 hover:bg-stone-900 font-medium text-white sm:w-auto disabled:bg-gray-500"
+                    className="inline-block w-full rounded-lg bg-blue-ocean text-white px-5 py-3 hover:bg-dark-blue-ocean font-medium sm:w-auto disabled:bg-gray-500"
                     disabled={formState.submitting}
                   >
                     Submit
                   </button>
-                  {formState.succeeded && <p className="text-blue-ocean">Submitted!</p>}
+                  {formState.succeeded && (
+                    <p className="text-blue-ocean">Submitted!</p>
+                  )}
                 </div>
               </form>
             </div>
