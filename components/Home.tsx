@@ -72,7 +72,7 @@ const Home = () => {
           </Link>
         </div>
         {word && (
-          <div className="">
+          <div className="mx-auto">
             <WordCard word={word} />
           </div>
         )}
