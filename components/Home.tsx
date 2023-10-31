@@ -3,6 +3,7 @@ import WordCard from "./WordCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import * as words from "../store/words_dictionary.json";
+import Image from "next/image";
 
 const Home = () => {
   const [word, setWord] = useState<WordDefinition>();
@@ -49,7 +50,7 @@ const Home = () => {
   }, []);
   return (
     <section className="h-fit overflow-x-hidden">
-      <div className="flex flex-col m-4 gap-2 lg:flex-row items-center lg:m-0">
+      <div className=" m-4 gap-2 items-center sm:grid sm:grid-cols-2 lg:m-0">
         <div className="px-8 pb-28 lg:px-32 flex flex-col justify-center align-between">
           <h1 className="text-4xl sm:text-6xl mt-32 font-bold tracking-wide">
             Hi, my name is
@@ -71,11 +72,18 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        {word && (
+        {/* {word && (
           <div className="mx-auto">
             <WordCard word={word} />
           </div>
-        )}
+        )} */}
+        <Image
+          alt="Profile"
+          src="/profile.jpg"
+          className="w-full h-full object-cover  sm:shadow-md"
+          width={1000}
+          height={1000}
+        />
       </div>
     </section>
   );

@@ -13,9 +13,9 @@ const About = () => {
       <div className="mt-16 flex flex-col md:flex-row align-center items-center">
         <div className="w-1/2 flex justify-center content-center">
           <Image
-            src="/placeholder-image.jpg"
+            src="/about-me.jpg"
             alt="about"
-            className="shadow-lg"
+            className="shadow-lg rounded-lg"
             width={500}
             height={300}
           />
